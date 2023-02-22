@@ -1,0 +1,23 @@
+{
+  "name": "backend-zero",
+  "version": "1.0.0",
+  "description": "Backend Zero RestFul API NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phuhoangdev/learn-backend-nodejs.git"
+  },
+  "author": "Phu Hoang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phuhoangdev/learn-backend-nodejs/issues"
+  },
+  "homepage": "https://github.com/phuhoangdev/learn-backend-nodejs#readme",
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}

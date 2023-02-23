@@ -2,7 +2,6 @@ const express = require("express"); //Commonjs
 require("dotenv").config(); //.ENV
 const configViewEngine = require("./config/viewEngine"); //viewEngine
 const webRoutes = require("./routes/web"); // Routes Web
-
 const app = express(); //App Express
 
 //Config General

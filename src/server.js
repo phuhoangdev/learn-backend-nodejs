@@ -3,6 +3,7 @@ require("dotenv").config(); //.ENV
 const configViewEngine = require("./config/viewEngine"); //viewEngine
 const webRoutes = require("./routes/web"); // Routes Web
 const apiRoutes = require("./routes/api"); // Routes Web
+const fileUpload = require("express-fileupload");
 const connection = require("./config/database"); // Database
 const User = require("./models/User");
 
@@ -10,6 +11,9 @@ const app = express(); //App Express
 //Config General
 const port = process.env.PORT || 8088;
 const hostname = process.env.HOST_NAME;
+
+//Config File Upload
+app.use(fileUpload());
 
 //Config req.body
 app.use(express.json()); // Used to parse JSON bodies
